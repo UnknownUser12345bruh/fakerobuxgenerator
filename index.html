@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robux Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Robux Generator</h1>
+    <p id="robuxCount">You have 0 Robux</p>
+    
+    <!-- Generate 1000 Robux button -->
+    <button id="generateButton">Generate 1000 Robux</button>
+    <p id="message"></p>
+
+    <!-- Store Section -->
+    <h2>Store</h2>
+    <div class="store">
+      <button class="item" data-cost="200" data-item="Brookhaven Gamepass">Buy Brookhaven Gamepass (200 Robux)</button>
+      <button class="item" data-cost="10000" data-item="UGC Item">Buy UGC Item (10,000 Robux)</button>
+      <button class="item" data-cost="150" data-item="Clothing">Buy Clothing (150 Robux)</button>
+      <button class="item" data-cost="25000" data-item="Roblox 1 Week">Buy Roblox 1 Week (25000 Robux)</button>
+      <button class="item" data-cost="3000" data-item="UGC Limited">Buy UGC Limited (3000 Robux)</button>
+    </div>
+
+    <div id="purchaseMessage"></div>
+
+    <div id="spendMessage">
+      <p>Amount Spent: <span id="amountSpent">0</span> Robux</p>
+      <p>Remaining Balance: <span id="remainingRobux">0</span> Robux</p>
+    </div>
+
+    <!-- Win Robux Section -->
+    <h2>Win Robux</h2>
+    <button id="winRobuxButton">Win Robux</button>
+    <div id="winRobuxOptions" style="display: none;">
+      <label for="winAmount">Choose how many Robux you want to win:</label>
+      <select id="winAmount">
+        <option value="5000"> 5000 Robux</option>
+        <option value="10000">10000 Robux</option>
+        <option value="15000">15000 Robux</option>
+        <option value="20000">20000 Robux</option>
+        <option value="25000">25000 Robux</option>
+      </select>
+      <button id="claimRobux">Claim Robux</button>
+    </div>
+
+    <!-- iPhone 16 Pro Selection -->
+    <h2>Choose Your iPhone 16 Pro</h2>
+    <div>
+      <label for="iphoneColor">Choose iPhone Color:</label>
+      <select id="iphoneColor">
+        <option value="Black Titanium">Black Titanium</option>
+        <option value="Desert Titanium">Desert Titanium</option>
+        <option value="Natural Titanium">Natural Titanium</option>
+        <option value="White Titanium">White Titanium</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="iphoneStorage">Choose Storage:</label>
+      <select id="iphoneStorage">
+        <option value="128">128GB (1629 Robux)</option>
+        <option value="256">256GB (1809 Robux)</option>
+        <option value="512">512GB (2189 Robux)</option>
+        <option value="1TB">1TB (2500 Robux)</option>
+      </select>
+    </div>
+
+    <button id="buyIphoneButton">Buy iPhone 16 Pro</button>
+    <p id="iphoneMessage"></p>
+
+    <!-- Donation Section -->
+    <h2>Donate Robux</h2>
+    <div>
+      <label for="donationUsername">Enter Username:</label>
+      <input type="text" id="donationUsername" placeholder="Enter a random username">
+    </div>
+    <div>
+      <label for="donationAmount">Enter Donation Amount:</label>
+      <input type="number" id="donationAmount" placeholder="Amount to donate">
+    </div>
+    <button id="donateButton">Donate Robux</button>
+    <p id="donationMessage"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
